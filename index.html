@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -31,222 +31,144 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <!-- timeblocks for a calender from 9am to 5pm-->
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >9AM</span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
-        </div>
-    </div>
+      <!-- need to make use of CSS tags to use styling on time blocks-->
+      <!-- need to use CSS to make timeblock inputs take up the space between time and save button-->
 
       <div class="row">
         <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >10AM</span
-              >
-            </div>
-          </div>
+          <p class="hour">9AM</p>
         </div>
         <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
+          <textarea class="description" id="9"></textarea>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
+          <button class="saveBtn" id="9">
+            <i class="fas fa-save"></i>
+          </button>
         </div>
-    </div>
 
-      <div class="row">
         <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >11AM</span
-              >
-            </div>
-          </div>
+          <p class="hour">10AM</p>
         </div>
+
         <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
+          <textarea class="description" id="10"></textarea>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
+          <button class="saveBtn" id="10">
+            <i class="fas fa-save"></i>
+          </button>
         </div>
 
-      </div>
-
-      <div class="row">
         <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >12PM</span
-              >
-            </div>
-          </div>
+          <p class="hour">11AM</p>
         </div>
+
         <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
+          <textarea class="description" id="11"></textarea>
         </div>
-        <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
-        </div>
-    </div>
 
-      <div class="row">
         <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >1PM</span
-              >
-            </div>
-          </div>
+          <button class="saveBtn" id="11">
+            <i class="fas fa-save"></i>
+          </button>
         </div>
+
+        <div class="col-sm-2">
+          <p class="hour">12PM</p>
+        </div>
+
         <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
+          <textarea class="description" id="12"></textarea>
         </div>
 
-      </div>
-
-      <div class="row">
         <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >2PM</span
-              >
-            </div>
-          </div>
+          <button class="saveBtn" id="12">
+            <i class="fas fa-save"></i>
+          </button>
         </div>
+
+        <div class="col-sm-2">
+          <p class="hour">1PM</p>
+        </div>
+
         <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
+          <textarea class="description" id="13"></textarea>
         </div>
 
-      </div>
-
-      <div class="row">
         <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >3PM</span
-              >
-            </div>
-          </div>
+          <button class="saveBtn" id="13">
+            <i class="fas fa-save"></i>
+          </button>
         </div>
+
+        <div class="col-sm-2">
+          <p class="hour">2PM</p>
+        </div>
+
         <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
+          <textarea class="description" id="14"></textarea>
         </div>
 
-      </div>
-
-      <div class="row">
         <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >4PM</span
-              >
-            </div>
-          </div>
+          <button class="saveBtn" id="14">
+            <i class="fas fa-save"></i>
+          </button>
         </div>
+
+        <div class="col-sm-2">
+          <p class="hour">3PM</p>
+        </div>
+
         <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
+          <textarea class="description" id="15"></textarea>
         </div>
 
-      </div>
-
-      <div class="row">
         <div class="col-sm-2">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >5PM</span
-              >
-            </div>
-          </div>
+          <button class="saveBtn" id="15">
+            <i class="fas fa-save"></i>
+          </button>
         </div>
+
+        <div class="col-sm-2">
+          <p class="hour">4PM</p>
+        </div>
+
         <div class="col-sm-8">
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-            ></textarea>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" class="btn btn-primary">Save</button>
+          <textarea class="description" id="16"></textarea>
         </div>
 
-      </div>
+        <div class="col-sm-2">
+          <button class="saveBtn" id="16">
+            <i class="fas fa-save"></i>
+          </button>
+        </div>
+
+        <div class="col-sm-2">
+          <p class="hour">5PM</p>
+        </div>
+
+        <div class="col-sm-8">
+          <textarea class="description" id="17"></textarea>
+        </div>
+
+        <div class="col-sm-2">
+          <button class="saveBtn" id="17">
+            <i class="fas fa-save"></i>
+          </button>
+        </div>
+
+        
+
+
+
+
 
       
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/hours.js"></script>
   </body>
 </html>
