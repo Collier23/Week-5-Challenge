@@ -1,5 +1,3 @@
-
-
 // save button
 var saveBtn = document.querySelector(".saveBtn");
 // time block
@@ -12,6 +10,15 @@ saveBtn.addEventListener("click", function(event) {
     console.log(timeBlock);
 });
 
+
+saveBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    var timeBlock = document.querySelector(".description").value;
+    localStorage.setItem("timeBlock", timeBlock);
+    console.log(timeBlock);
+});
+
+
 // get from local storage
 var timeBlock = localStorage.getItem("timeBlock");
 console.log(timeBlock);
@@ -19,7 +26,7 @@ console.log(timeBlock);
 // display on page
 document.querySelector(".description").innerHTML = timeBlock;
 
-// get the current date and time
+// get the current date 
 var currentDay = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 console.log(currentDay);
 
