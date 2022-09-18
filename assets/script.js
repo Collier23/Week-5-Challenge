@@ -1,4 +1,4 @@
-// save button needs to save users input to local storage and it still show when page is refreshed
+
 
 // save button
 var saveBtn = document.querySelector(".saveBtn");
@@ -19,21 +19,12 @@ console.log(timeBlock);
 // display on page
 document.querySelector(".description").innerHTML = timeBlock;
 
-
-
-
-
-
-
-
-
 // get the current date and time
 var currentDay = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 console.log(currentDay);
 
 // display the current date and time
 $("#currentDay").text(currentDay);
-
 
 var currentHour = moment().format("H");
 console.log(currentHour);
